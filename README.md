@@ -13,6 +13,8 @@ Progetto didattico sviluppato durante il corso di Laravel e PHP con MySQL.<br>
 Include CRUD completo, layout moderno, animazioni AOS e design professionale.
 </p>
 
+<video controls src="20260708-2149-35.6849425.mp4" title="Title"></video>
+
 ---
 
 ## 🚀 Funzionalità
