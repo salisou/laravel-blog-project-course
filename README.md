@@ -1,6 +1,6 @@
 <p align="center">
   <img src="https://img.shields.io/badge/Laravel-13-red?logo=laravel" />
-  <img src="https://img.shields.io/badge/PHP-8.2-blue?logo=php" />
+  <img src="https://img.shields.io/badge/PHP-8.3-blue?logo=php" />
   <img src="https://img.shields.io/badge/MySQL-8-orange?logo=mysql" />
   <img src="https://img.shields.io/badge/TailwindCSS-3.4-cyan?logo=tailwindcss" />
   <img src="https://img.shields.io/badge/AOS-Animations-purple" />
