@@ -45,24 +45,31 @@ Include CRUD completo, layout moderno, animazioni AOS e design professionale.
 ```bash
 git clone https://github.com/tuo-username/blog-laravel-course.git
 cd blog-laravel-course
-
+```
 
 ## 2️⃣ Installa le dipendenze
-
+```bash
     composer install
+```
 
 ## 3️⃣ Configura l’ambiente
 - Copia il file .env:
-    cp .env.example .env
 
+```bash
+    cp .env.example .env
+```
 
 ##### Imposta il database:
+
+```bash
     DB_DATABASE=blog_course
     DB_USERNAME=root
     DB_PASSWORD=
-
+```
 ## 4️⃣ Genera la chiave
+```bash
     php artisan key:generate
+```
 
 ## 5️⃣ Migra il database
     php artisan migrate
