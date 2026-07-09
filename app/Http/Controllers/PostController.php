@@ -8,6 +8,11 @@ use Illuminate\Support\Str; // da non dimenticare
 
 class PostController extends Controller
 {
+    // public function __construct()
+    // {
+    //     $this->middleware('auth');
+    // }
+
     /**
      * Post::latest() 
      * ordina la query mediante "created_atin" ordine decrescente, 

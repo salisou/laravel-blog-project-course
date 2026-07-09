@@ -13,11 +13,11 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <style>
-        /* Glassmorphism */
-        .glass {
-            backdrop-filter: blur(18px);
-            background: rgba(255, 255, 255, 0.15);
-        }
+    /* Glassmorphism */
+    .glass {
+        backdrop-filter: blur(18px);
+        background: rgba(255, 255, 255, 0.15);
+    }
     </style>
 </head>
 
@@ -29,12 +29,34 @@
             <h1 class="text-2xl font-bold text-white tracking-wide">LearnCode Academy</h1>
 
             <nav class="flex gap-8 text-lg">
+
+                <!-- Link originali -->
                 <a href="{{ route('posts.index') }}" class="hover:text-blue-400 transition">CRUD Post</a>
+                <a href="{{ route('books.index') }}" class="hover:text-blue-400 transition">Books</a>
                 <a href="#" class="hover:text-blue-400 transition">Corsi</a>
                 <a href="#" class="hover:text-blue-400 transition">Contatti</a>
+
+                <!-- Autenticazione -->
+                @guest
+                <a href="{{ route('login') }}" class="hover:text-green-400 transition">Login</a>
+                <a href="{{ route('register') }}" class="hover:text-green-400 transition">Registrati</a>
+                @endguest
+
+                @auth
+                <a href="{{ route('profile.edit') }}" class="hover:text-yellow-400 transition">Profilo</a>
+
+                <form action="{{ route('logout') }}" method="POST" class="inline">
+                    @csrf
+                    <button class="hover:text-red-400 transition">
+                        Logout
+                    </button>
+                </form>
+                @endauth
+
             </nav>
         </div>
     </header>
+
 
     <!-- HERO -->
     <section class="pt-40 pb-32 bg-gradient-to-br from-blue-700 via-indigo-700 to-purple-700">
@@ -116,9 +138,9 @@
     <!-- AOS Script -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init({
-            duration: 1200
-        });
+    AOS.init({
+        duration: 1200
+    });
     </script>
 
 </body>

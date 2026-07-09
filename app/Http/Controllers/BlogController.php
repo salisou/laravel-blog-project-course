@@ -10,6 +10,11 @@ use Illuminate\Support\Str; // da non dimenticare
 
 class BlogController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     public function index()
     {
         $blogs = Blog::latest()->paginate(9);
